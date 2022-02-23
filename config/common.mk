@@ -296,6 +296,7 @@ PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NavigationBarNoHintOverlay \
     KeyboardNoNavigationBarOverlay \
+    Launcher3NoHintOverlay \
     NetworkStackOverlay
 
 # Translations
