@@ -32,6 +32,7 @@ SOONG_CONFIG_infinityGlobalVars += \
     bootloader_message_offset \
     uses_miui_camera \
     camera_override_format_from_reserved \
+    camera_needs_client_info_lib \
     gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
     gralloc_handle_has_ubwcp_format \
@@ -79,6 +80,7 @@ SOONG_CONFIG_infinityGlobalVars_camera_override_format_from_reserved := $(TARGET
 SOONG_CONFIG_infinityGlobalVars_uses_miui_camera := $(TARGET_USES_MIUI_CAMERA)
 SOONG_CONFIG_infinityGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
 SOONG_CONFIG_infinityGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
+SOONG_CONFIG_infinityGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 SOONG_CONFIG_infinityGlobalVars_gralloc_handle_has_ubwcp_format := $(TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT)
 SOONG_CONFIG_infinityGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_infinityGlobalVars_uses_oplus_touch := $(TARGET_USES_OPLUS_TOUCH)
