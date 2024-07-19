@@ -19,6 +19,13 @@ EXPORT_TO_SOONG := \
 $(call add_soong_config_namespace,infinityVarsPlugin)
 $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call add_soong_config_var,infinityVarsPlugin,$(v))))
 
+SOONG_CONFIG_NAMESPACES += lineageGlobalVars
+SOONG_CONFIG_lineageGlobalVars += \
+    spoof_first_api_level_32
+
+# Soong bool variables
+SOONG_CONFIG_lineageGlobalVars_spoof_first_api_level_32 := $(SPOOF_FIRST_API_LEVEL_32)
+
 # Camera
 ifneq ($(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED),)
     $(call soong_config_set,camera,override_format_from_reserved,$(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED))
