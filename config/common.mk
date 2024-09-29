@@ -243,6 +243,11 @@ PRODUCT_PACKAGES += \
 # BatteryStatsViewer
 PRODUCT_PACKAGES += \
     BatteryStatsViewer
+    
+# Freeform
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar \
 
 # Storage manager
 PRODUCT_SYSTEM_PROPERTIES += \
