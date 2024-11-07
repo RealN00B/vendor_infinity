@@ -305,7 +305,8 @@ PRODUCT_PACKAGES += \
     NavigationBarNoHintOverlay \
     KeyboardNoNavigationBarOverlay \
     Launcher3NoHintOverlay \
-    NetworkStackOverlay
+    NetworkStackOverlay \
+    PermissionControllerOverlay
 
 # Translations
 CUSTOM_LOCALES += \
