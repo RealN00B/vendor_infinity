@@ -353,6 +353,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PihooksGmsModel="Pixel 7 Pro" \
     PihooksBuildFp="google/caiman/caiman:15/AP4A.250105.002/12701944:user/release-keys" \
     PihooksBuildModel="Pixel 9 Pro"
+    
+# TFLite service.
+PRODUCT_PACKAGES += libtensorflowlite_jni
+# Allow TFLite service modules to be installed to the system partition
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/lib/libtensorflowlite_jni.so \
+ 	system/lib64/libtensorflowlite_jni.so
 
 # Disable async MTE on a few processes
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
