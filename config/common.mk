@@ -331,6 +331,29 @@ include vendor/infinity/config/version.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
+# PI Hooks
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.pihooks_mainline_BRAND?=google \
+    persist.sys.pihooks_mainline_BOARD?=caiman \
+    persist.sys.pihooks_mainline_DEVICE?=caiman \
+    persist.sys.pihooks_mainline_HARDWARE?=caiman \
+    persist.sys.pihooks_mainline_ID?=AP4A.250105.002 \
+    persist.sys.pihooks_mainline_MANUFACTURER?=Google \
+    persist.sys.pihooks_mainline_PRODUCT?=caiman \
+    persist.sys.pihooks_BRAND?=google \
+    persist.sys.pihooks_MANUFACTURER?=Google \
+    persist.sys.pihooks_DEVICE?=cheetah \
+    persist.sys.pihooks_PRODUCT?=cheetah_beta \
+    persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=25 \
+    persist.sys.pihooks_SECURITY_PATCH?=2024-11-05 \
+    persist.sys.pihooks_ID?=BP11.241025.006
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PihooksGmsFp="google/cheetah_beta/cheetah:15/BP11.241025.006/12620009:user/release-keys" \
+    PihooksGmsModel="Pixel 7 Pro" \
+    PihooksBuildFp="google/caiman/caiman:15/AP4A.250105.002/12701944:user/release-keys" \
+    PihooksBuildModel="Pixel 9 Pro"
+
 # Disable async MTE on a few processes
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.arm64.memtag.app.com.android.se=off \
