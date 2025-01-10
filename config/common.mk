@@ -254,7 +254,8 @@ endif
 
 # OmniJaws
 PRODUCT_PACKAGES += \
-    OmniJaws
+    OmniJaws \
+    OmniStyle
 
 # Root
 PRODUCT_PACKAGES += \
