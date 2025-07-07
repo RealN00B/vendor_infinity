@@ -591,4 +591,7 @@
 
     <!-- Contextual Search -->
     <string name="config_defaultContextualSearchPackageName" translatable="false">com.google.android.googlequicksearchbox</string>
+    
+    <!-- Touch slop for responsiveness -->
+    <dimen name="config_viewConfigurationTouchSlop">6dp</dimen>
 </resources>
