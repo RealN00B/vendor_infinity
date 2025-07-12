@@ -347,7 +347,8 @@ PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay \
     NfcOverlay \
-    PermissionControllerOverlay
+    PermissionControllerOverlay \
+    CustomFontPixelLauncherOverlay
 
 # Translations
 CUSTOM_LOCALES += \
