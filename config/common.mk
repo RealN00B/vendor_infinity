@@ -215,8 +215,8 @@ PRODUCT_COPY_FILES += \
     vendor/infinity/prebuilt/common/bin/wipe-frp.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/wipe-frp
 
 # Gamespace
- PRODUCT_PACKAGES += \
-     GameSpace
+# PRODUCT_PACKAGES += \
+#     GameSpace
  
  PRODUCT_PRODUCT_PROPERTIES += \
      debug.graphics.game_default_frame_rate.disabled=true
