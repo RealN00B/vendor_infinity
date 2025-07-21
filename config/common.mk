@@ -241,9 +241,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinity/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
 # LMO
-PRODUCT_PACKAGES += \
-    LMOFreeform \
-    LMOFreeformSidebar
+#PRODUCT_PACKAGES += \
+#    LMOFreeform \
+#    LMOFreeformSidebar
 
 # Overlays
 include packages/overlays/Themes/themes.mk
