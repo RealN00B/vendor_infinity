@@ -166,7 +166,7 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PACKAGES += \
-    LineageSettingsProvider \
+#    LineageSettingsProvider \
     Updater
 
 PRODUCT_COPY_FILES += \
