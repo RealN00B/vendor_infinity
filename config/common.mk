@@ -155,15 +155,15 @@ PRODUCT_PACKAGES += \
      persist.sys.sf.disable_blurs=1
 
 # Lineage packages
-ifeq ($(PRODUCT_IS_ATV),)
-PRODUCT_PACKAGES += \
-    ExactCalculator
-endif
+#ifeq ($(PRODUCT_IS_ATV),)
+#PRODUCT_PACKAGES += \
+#    ExactCalculator
+#endif
 
-ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
-PRODUCT_PACKAGES += \
-    LineageParts
-endif
+#ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
+#PRODUCT_PACKAGES += \
+#    LineageParts
+#endif
 
 PRODUCT_PACKAGES += \
 #    LineageSettingsProvider \
